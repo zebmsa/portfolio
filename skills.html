@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <style>
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: transparent
+    }
+  </style>
+    <title>Online Portfolio of Mesa</title>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <nav>
+      <div class="nav__content">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="skills-section">
+      <div class="skills-content animate__animated animate__fadeIn">
+        <h1 class="skills-title">Skills</h1>
+    
+        <div class="skills-category">
+          <h2>Languages</h2>
+          <div class="skills-list">
+            <div class="skill-item">
+              <svg viewBox="0 0 114 114">
+                <circle class="bg" cx="57" cy="57" r="52"></circle>
+                <circle class="meter-1 progress-bar" style="--percentage: 85%;" cx="57" cy="57" r="52"></circle>
+                <text x="50%" y="50%" fill="#00FFFF" text-anchor="middle" alignment-baseline="middle">C++</text>
+              </svg>
+            </div>
+    
+            <div class="skill-item">
+              <svg viewBox="0 0 114 114">
+                <circle class="bg" cx="57" cy="57" r="52"></circle>
+                <circle class="meter-2 progress-bar" style="--percentage: 62%;" cx="57" cy="57" r="52"></circle>
+                <text x="50%" y="50%" fill="#00ff00" text-anchor="middle" alignment-baseline="middle">Java</text>
+              </svg>
+            </div>
+    
+            <div class="skill-item">
+              <svg viewBox="0 0 114 114">
+                <circle class="bg" cx="57" cy="57" r="52"></circle>
+                <circle class="meter-3 progress-bar" style="--percentage: 85%;" cx="57" cy="57" r="52"></circle>
+                <text x="50%" y="50%" fill="#ff33ff" text-anchor="middle" alignment-baseline="middle">HTML/CSS</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+    
+        <div class="skills-category">
+          <h2>Techniques</h2>
+          <div class="skills-list">
+            <div class="skill-item">
+              <svg viewBox="0 0 114 114">
+                <circle class="bg" cx="57" cy="57" r="52"></circle>
+                <circle class="meter-4 progress-bar" style="--percentage: 70%;" cx="57" cy="57" r="52"></circle>
+                <text x="50%" y="40%" fill="#FFA500" text-anchor="middle" alignment-baseline="middle">UI/UX</text>
+                <text x="50%" y="55%" fill="#FFA500" text-anchor="middle" alignment-baseline="middle">Designing</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>      
+    <footer>
+      <p>&copy; 2023 Sebastien V. Mesa. All rights reserved.</p>
+    </footer>
+    <script>
+      particlesJS('particles-js', {
+        "particles": {
+          "number": {
+            "value": 80,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#ffffff"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            },
+            "polygon": {
+              "nb_sides": 5
+            },
+            "image": {
+              "src": "img/github.svg",
+              "width": 100,
+              "height": 100
+            }
+          },
+          "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 40,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "repulse"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 400,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 400,
+              "size": 40,
+              "duration": 2,
+              "opacity": 8,
+              "speed": 3
+            },
+            "repulse": {
+              "distance": 200,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true
+      });
+    </script>
+  </body>
+</html>
